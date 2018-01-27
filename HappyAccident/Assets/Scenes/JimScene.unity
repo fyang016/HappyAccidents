@@ -537,7 +537,8 @@ GameObject:
   - component: {fileID: 1883129696}
   - component: {fileID: 1883129698}
   - component: {fileID: 1883129697}
-  m_Layer: 9
+  - component: {fileID: 1883129699}
+  m_Layer: 10
   m_Name: ConductorContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,11 +570,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CondStart: {fileID: 1079681211935254, guid: f75c3fb57c4f84d4a949ec8a7a11d12e, type: 2}
-  CondMid: {fileID: 1149604809775512, guid: 152965bc2f8a8ee46ade580b2fe6c564, type: 2}
-  CondEnd: {fileID: 1789271188798730, guid: 1f11329586ba3d640a4eb0b5688aef0c, type: 2}
+  CondMid: {fileID: 1291280692339440, guid: 152965bc2f8a8ee46ade580b2fe6c564, type: 2}
+  CondEnd: {fileID: 1326589930267532, guid: 1f11329586ba3d640a4eb0b5688aef0c, type: 2}
   CondContainer: {fileID: 1883129692}
+  CondRender: {fileID: 1883129696}
   numberOfConductor: 5
   numberToIncre: 1
+  isSelected: 0
 --- !u!114 &1883129695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,14 +643,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 99
+  m_AngularDrag: 99
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1883129698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -657,7 +660,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -673,3 +676,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.99, y: 0.99}
   m_EdgeRadius: 0
+--- !u!114 &1883129699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1883129692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3272505b3d0de4da64611b3399ae37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  shiftDis: 0
