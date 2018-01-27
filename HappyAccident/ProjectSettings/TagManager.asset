@@ -15,9 +15,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Energy
+  - Conductor
+  - ConductorTrigger
   - 
   - 
   - 
@@ -42,4 +42,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: TopSprite
+    uniqueID: 2785250763
+    locked: 0
+  - name: Energy
+    uniqueID: 1621005465
     locked: 0
