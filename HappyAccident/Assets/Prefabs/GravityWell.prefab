@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13be7aad2468dd40837102fb010eb01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleRadius: 1.5
+  scaleRadius: 1
   angularVelo: 90
   isOn: 1
 --- !u!212 &212034088385565130

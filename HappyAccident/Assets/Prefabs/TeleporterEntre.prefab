@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1657952934441008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.36, y: -0.21, z: 0}
+  m_LocalPosition: {x: -0.45085478, y: -1.6625123, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4996013633177376}
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 1861816299806804}
-  maxDistance: 3
+  maxDistance: 4
   teleporterAudio: {fileID: 82610376082413020}
   grabAudio: {fileID: 82461427100261002}
   dropAudio: {fileID: 82882805135052734}
