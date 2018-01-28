@@ -18,6 +18,7 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 4708703360109718}
   - component: {fileID: 212610385805389710}
   - component: {fileID: 114071821328646634}
@@ -27,6 +28,14 @@ GameObject:
   - component: {fileID: 82345213743218414}
   - component: {fileID: 82070066825102414}
   - component: {fileID: 114322619727556076}
+=======
+  - component: {fileID: 4152156640554128}
+  - component: {fileID: 212378407337115918}
+  - component: {fileID: 114004062503021078}
+  - component: {fileID: 50187911868208900}
+  - component: {fileID: 61649285387765210}
+  - component: {fileID: 114436975524467526}
+>>>>>>> master
   m_Layer: 10
   m_Name: Deactivator
   m_TagString: Energy
@@ -347,22 +356,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityWell: {fileID: 0}
+<<<<<<< HEAD
   deactivatorAudio: {fileID: 82760848038576414}
   grabAudio: {fileID: 82345213743218414}
   dropAudio: {fileID: 82070066825102414}
 --- !u!114 &114322619727556076
+=======
+--- !u!114 &114436975524467526
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1419881392892480}
+=======
+  m_GameObject: {fileID: 1662502638119396}
+>>>>>>> master
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77a1781d344792c4f8eab5e560c52a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+<<<<<<< HEAD
 --- !u!212 &212610385805389710
+=======
+--- !u!212 &212378407337115918
+>>>>>>> master
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
