@@ -31,7 +31,7 @@ public class ConductorCreator : MonoBehaviour {
 		isSelected = true;
 		Debug.Log ("Hit");
 		if (isSelected) {
-			// CondRender.color = (Color.red);
+			 //CondRender.color = (Color.red);
 		}
 		else if (!isSelected) {
 			CondRender.color = new Color(255,255,255);
