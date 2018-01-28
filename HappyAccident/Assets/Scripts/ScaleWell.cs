@@ -8,6 +8,10 @@ public class ScaleWell : MonoBehaviour {
 	public float scaleRadius = 2.0f;
 	public bool isOn = true;
 
+	public void toggleWell() {
+		isOn = !isOn;
+	}
+
 	void Start () {
 		m_Rigidbody = GetComponent<Rigidbody2D> ();
 		m_Rigidbody.transform.localScale = new Vector2 (scaleRadius,scaleRadius);
