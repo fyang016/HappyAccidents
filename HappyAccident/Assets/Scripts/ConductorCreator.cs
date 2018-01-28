@@ -65,15 +65,16 @@ public class ConductorCreator : MonoBehaviour {
 				}
                 resizerAudio.Play();
             }
-			if (Input.GetKeyDown(KeyCode.Space))
+			/*if (Input.GetKeyDown(KeyCode.Space))
 			{
+                Debug.Log("space");
                 rotation = rotation + 90;
                 if (rotation >= 360)
                 {
                     rotation = 0;
                 }
 				transform.Rotate(0, 0, 90);
-			}
+			}*/
 		}
 	}
 
