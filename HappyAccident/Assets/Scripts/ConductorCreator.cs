@@ -15,8 +15,9 @@ public class ConductorCreator : MonoBehaviour {
 
 	public float numberToIncre = 1.0f;
 
+    public int rotation = 0;
 
-	SpriteRenderer rend;
+    SpriteRenderer rend;
 
 	[SerializeField] bool isSelected = false;
 	bool createFirst = true;
@@ -62,6 +63,11 @@ public class ConductorCreator : MonoBehaviour {
 			}
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
+                rotation = rotation + 90;
+                if (rotation >= 360)
+                {
+                    rotation = 0;
+                }
 				transform.Rotate(0, 0, 90);
 			}
 		}
@@ -71,6 +77,7 @@ public class ConductorCreator : MonoBehaviour {
 		foreach (Transform child in transform) {
 			GameObject.Destroy (child.gameObject);
 		}
+        Debug.Log(CondContainer.transform.position);
 		for (int i = 1; i < numParts; i++) {
 			Vector2 newPos = CondContainer.transform.position + (CondContainer.transform.up * i * numberToIncre);
 			if (i == 0) {
