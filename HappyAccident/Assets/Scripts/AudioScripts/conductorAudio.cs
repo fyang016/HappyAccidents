@@ -5,17 +5,10 @@ using UnityEngine;
 public class conductorAudio : MonoBehaviour
 {
     private float colliderFloat;
-    // Use this for initialization
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public AudioSource conductAudio;
+    public AudioSource grabAudio;
+    public AudioSource dropAudio;
 
     void OnTriggerEnter2D(Collider2D colInfo)
     {
@@ -23,8 +16,7 @@ public class conductorAudio : MonoBehaviour
         {
             colliderFloat += 1;
             //Debug.Log(colliderFloat);
-            AudioSource conductorAudio = GetComponent<AudioSource>();
-            conductorAudio.Play();
+            conductAudio.Play();
         }
     }
 
@@ -36,9 +28,18 @@ public class conductorAudio : MonoBehaviour
             //Debug.Log(colliderFloat);
             if (colliderFloat == 0)
             {
-                AudioSource conductorAudio = GetComponent<AudioSource>();
-                conductorAudio.Stop();
+                conductAudio.Stop();
             }
         }
+    }
+
+    void OnMouseDown()
+    {
+        grabAudio.Play();
+    }
+
+    void OnMouseUp()
+    {
+        dropAudio.Play();
     }
 }

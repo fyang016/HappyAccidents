@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class Deactivator : MonoBehaviour {
 
-
 	public ScaleWell gravityWell;
 
-	void OnTriggerEnter2D(Collider2D colInfo) {
+    public AudioSource deactivatorAudio;
+    public AudioSource grabAudio;
+    public AudioSource dropAudio;
+
+    void OnTriggerEnter2D(Collider2D colInfo) {
 		if (colInfo.tag == "Energy") {
 			gravityWell.toggleWell ();
 			Debug.Log ("Hitter");
-            AudioSource deactivatorAudio = GetComponent<AudioSource>();
             deactivatorAudio.Play();
         }
 	}
+
+    void OnMouseDown()
+    {
+        grabAudio.Play();
+    }
+
+    void OnMouseUp()
+    {
+        dropAudio.Play();
+    }
 }

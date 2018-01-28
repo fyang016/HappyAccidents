@@ -2,18 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-    [RequireComponent(typeof(AudioSource))]
+    //[RequireComponent(typeof(AudioSource))]
 public class gravityWellAudio : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-      
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     void OnCollisionEnter2D(Collision2D collideInfo)
     {
