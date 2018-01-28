@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityWell: {fileID: 0}
+  deactivatorAudio: {fileID: 0}
+  grabAudio: {fileID: 0}
+  dropAudio: {fileID: 0}
 --- !u!114 &114436975524467526
 MonoBehaviour:
   m_ObjectHideFlags: 1

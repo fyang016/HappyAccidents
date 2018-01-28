@@ -7,6 +7,10 @@ public class teleportFunction : MonoBehaviour
     public GameObject child;
     public float maxDistance = 3;
 
+    public AudioSource teleporterAudio;
+    public AudioSource grabAudio;
+    public AudioSource dropAudio;
+
     void Update()
     {
         //distance for the child (P.S I do not know what these code are doing)
@@ -26,6 +30,23 @@ public class teleportFunction : MonoBehaviour
         if (collideInfo.collider.tag == "Energy")
         {
             collideInfo.transform.position = child.transform.position;
+            teleporterAudio.Play();
+            //if (grabAudio.isPlaying || dropAudio.isPlaying)
+            //{
+            //    grabAudio.Stop();
+            //    dropAudio.Stop();
+            //    teleporterAudio.Play();
+            //}
         }
+    }
+
+    void OnMouseDown()
+    {
+        grabAudio.Play();
+    }
+
+    void OnMouseUp()
+    {
+        dropAudio.Play();
     }
 }
