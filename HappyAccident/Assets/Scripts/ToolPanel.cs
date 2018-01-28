@@ -12,11 +12,15 @@ public class ToolPanel : MonoBehaviour {
     Transform conduct, teleport, deactive;
     List<GameObject> activeItems;
     public bool isActive = false;
+    GameObject manager;
 	void Start () {
-        gameObject.SetActive(isActive);
+        //gameObject.SetActive(isActive);
+        manager = GameObject.Find("_GameManager");
 	}
-	
-	// Update is called once per frame
+
+    // Update is called once per frame
+    bool enable = true;
+    
 	void Update () {
 		
 	}
@@ -24,9 +28,9 @@ public class ToolPanel : MonoBehaviour {
     void OnEnable()
     {
         Debug.Log("N");
-        tempConductor = Instantiate(conductor, conduct.position + new Vector3(2, 0, -10), conduct.rotation );
-        tempTeleporter = Instantiate(teleporter, teleport.position + new Vector3(2, 0, -10), teleport.rotation);
-        tempDeactivator = Instantiate(deactivator, deactive.position + new Vector3(2, 0, -10), deactive.rotation);
+        tempConductor = Instantiate(conductor, conduct.position, conduct.rotation );
+        tempTeleporter = Instantiate(teleporter, teleport.position , teleport.rotation);
+        tempDeactivator = Instantiate(deactivator, deactive.position , deactive.rotation);
         
     }
     void OnDisable()
@@ -34,29 +38,27 @@ public class ToolPanel : MonoBehaviour {
         //Destroy(tempConductor);
         //Destroy(tempTeleporter);
         
-        Bounds cbounds = this.GetComponent<BoxCollider2D>().bounds;
-        Bounds tbounds = cbounds;
-        Bounds dbounds = cbounds;
-        bool conductorIsInsideTheBox = cbounds.Contains(tempConductor.transform.position);
-        bool teleporterIsInsideTheBox = tbounds.Contains(tempTeleporter.transform.position);
-        bool deactivatorIsInsideTheBox = dbounds.Contains(tempDeactivator.transform.position);
+        Bounds bounds = this.GetComponent<BoxCollider>().bounds;
+        bool conductorIsInsideTheBox = bounds.Contains(tempConductor.transform.position);
+        bool teleporterIsInsideTheBox = bounds.Contains(tempTeleporter.transform.position);
+        bool deactivatorIsInsideTheBox = bounds.Contains(tempDeactivator.transform.position);
         if (conductorIsInsideTheBox)
         {
             Destroy(tempConductor);
         }
+        else { manager.GetComponent<Manager>().components.Add(tempConductor); }
         if (teleporterIsInsideTheBox)
         {
             Destroy(tempTeleporter);
         }
+        else { manager.GetComponent<Manager>().components.Add(tempTeleporter); }
         if (deactivatorIsInsideTheBox)
         {
             Destroy(tempDeactivator);
         }
+        else { manager.GetComponent<Manager>().components.Add(tempDeactivator); }
+
 
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        Debug.Log("Exiting");
-        GameObject c = collision.gameObject;
-    }
+    
 }
