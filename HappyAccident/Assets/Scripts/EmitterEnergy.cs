@@ -18,12 +18,12 @@ public class EmitterEnergy : MonoBehaviour {
 
 	void Start() {
 		m_Rigidbody = GetComponent<Rigidbody2D> ();
+		StartCoroutine ("SpawnCoroutine");
 	}
 
-    /*
+    
     IEnumerator SpawnCoroutine () {
-        Debug.Log(Vector2.Distance(GameObject.Find("ConductorContainer").transform.position, m_Rigidbody.position));
-        if (Vector2.Distance(GameObject.Find("ConductorContainer").transform.position, m_Rigidbody.position) < 1.1f)
+		if (isConnected)
         {            
             SpawnEnergy();
             yield return new WaitForSeconds(timeInterval / 2);
@@ -31,7 +31,7 @@ public class EmitterEnergy : MonoBehaviour {
 	
 	    yield return new WaitForSeconds (timeInterval / 2);
     }
-    */
+    
 
         /*
     IEnumerator OnCollisionStay2D(Collision2D coll)

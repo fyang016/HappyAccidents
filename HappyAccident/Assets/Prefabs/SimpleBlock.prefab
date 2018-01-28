@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114271180985700028}
   - component: {fileID: 82072788365323936}
   - component: {fileID: 114044796541171458}
+  - component: {fileID: 114860784045961478}
   m_Layer: 0
   m_Name: SimpleBlock
   m_TagString: Obstacle
@@ -173,6 +174,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &114860784045961478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424726680855064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8ee4ce8097be274bb2fff4124c7793f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightningEffect: {fileID: 1640314271827968, guid: 98382917414eda249b19aba5d16764d9,
+    type: 2}
 --- !u!212 &212532231804975752
 SpriteRenderer:
   m_ObjectHideFlags: 1

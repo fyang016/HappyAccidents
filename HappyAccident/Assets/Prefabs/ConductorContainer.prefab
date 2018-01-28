@@ -29,9 +29,9 @@ GameObject:
   - component: {fileID: 114401808463146036}
   - component: {fileID: 82467114257406170}
   - component: {fileID: 82566591925975168}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: ConductorContainer
-  m_TagString: Untagged
+  m_TagString: Conductor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,13 +42,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1343990092568168}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.42, y: 1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7125237, w: 0.70164806}
+  m_LocalPosition: {x: -3.1, y: 0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.881004}
 --- !u!50 &50593292677934918
 Rigidbody2D:
   serializedVersion: 4
