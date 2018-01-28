@@ -18,4 +18,9 @@ public class Manager : MonoBehaviour {
 	void Update () {
 		
 	}
+    
+     OnCollisionEnter2D (Collider endCollision)
+    {
+
+    }
 }
