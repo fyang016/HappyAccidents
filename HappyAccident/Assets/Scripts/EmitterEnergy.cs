@@ -53,6 +53,7 @@ public class EmitterEnergy : MonoBehaviour {
         {
             condName = colInfo.name;
             isConnected = true;
+            SpawnEnergy();
         }
 
     }
@@ -65,7 +66,7 @@ public class EmitterEnergy : MonoBehaviour {
             isConnected = false;
         }
     }
-    void FixedUpdate()
+    /*void FixedUpdate()
     {
         timer += Time.deltaTime;
         if (isConnected)
@@ -76,7 +77,7 @@ public class EmitterEnergy : MonoBehaviour {
                 timer = 0f;
             }
         }        
-    }   
+    } */  
 
 	void SpawnEnergy() {
 		Rigidbody2D energyClone;
