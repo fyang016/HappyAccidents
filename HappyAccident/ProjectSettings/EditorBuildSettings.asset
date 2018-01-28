@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/JimScene.unity
     guid: c82ff8f2099583a428043ef6d847b624
   - enabled: 1
@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 03c85167ef05e654b87cb8e94ea533cd
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 8e85a30e19512fa449f2c9f4c3935f54
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 451386f88cf39364c9f5636595fe889c
