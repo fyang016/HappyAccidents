@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/JimScene.unity
-    guid: c82ff8f2099583a428043ef6d847b624
+    path: Assets/Scenes/menu.unity
+    guid: 6039e37417eede24dbd48f55d251820f
+  - enabled: 1
+    path: Assets/Scenes/Lvl 1.unity
+    guid: 40e1bc1d6133e8f469a188246ddf5f9e
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 89253e4887c99be43b44b0729efa1333
@@ -17,3 +20,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 03c85167ef05e654b87cb8e94ea533cd
+  - enabled: 1
+    path: Assets/Scenes/LevelTrans/Trans(0-1).unity
+    guid: ea54eae2557e02543b65c9eefa836560
+  - enabled: 1
+    path: Assets/Scenes/LevelTrans/Trans(1-2).unity
+    guid: e3aedc757a1364e4e95136b495ec264b
+  - enabled: 1
+    path: Assets/Scenes/LevelTrans/Trans(2-3).unity
+    guid: 8d2228e89be43c049896c270bfc7014e
+  - enabled: 1
+    path: Assets/Scenes/LevelTrans/Trans(3-4).unity
+    guid: 5bfe37187cf77d64791414888ab4942d
+  - enabled: 1
+    path: Assets/Scenes/LevelTrans/Trans(4-5).unity
+    guid: e7b3075bd982af8468e26ec39cdef64d
+  - enabled: 1
+    path: Assets/Scenes/LevelTrans/Trans(5-Win).unity
+    guid: ad9e6a54f640cab45a8068b11dc89a95
