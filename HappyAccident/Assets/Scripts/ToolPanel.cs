@@ -28,9 +28,9 @@ public class ToolPanel : MonoBehaviour {
     void OnEnable()
     {
         Debug.Log("N");
-        tempConductor = Instantiate(conductor, conduct.position + new Vector3(0,0, -1) , conduct.rotation );
-        tempTeleporter = Instantiate(teleporter, teleport.position + new Vector3(0, 0, -1), teleport.rotation);
-        tempDeactivator = Instantiate(deactivator, deactive.position + new Vector3(0, 0, -1), deactive.rotation);
+        tempConductor = Instantiate(conductor, conduct.position, conduct.rotation );
+        tempTeleporter = Instantiate(teleporter, teleport.position , teleport.rotation);
+        tempDeactivator = Instantiate(deactivator, deactive.position , deactive.rotation);
         
     }
     void OnDisable()
@@ -60,10 +60,5 @@ public class ToolPanel : MonoBehaviour {
 
 
     }
-    private void OnTriggerExit(Collider collision)
-    {
-        Debug.Log("Exiting");
-        GameObject c = collision.gameObject;
-        
-    }
+    
 }

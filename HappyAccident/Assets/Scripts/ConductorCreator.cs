@@ -26,14 +26,17 @@ public class ConductorCreator : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
-		isSelected = !isSelected;
+		isSelected = true;
 		Debug.Log ("Hit");
 		if (isSelected) {
-			CondRender.color = (Color.red);
+			// CondRender.color = (Color.red);
 		}
 		else if (!isSelected) {
 			CondRender.color = new Color(255,255,255);
 		}
+	}
+	void OnMouseUp(){
+		isSelected = false;
 	}
 
 	void FixedUpdate() {
