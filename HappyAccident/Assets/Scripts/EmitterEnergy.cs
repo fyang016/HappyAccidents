@@ -53,6 +53,7 @@ public class EmitterEnergy : MonoBehaviour {
         {
             condName = colInfo.name;
             isConnected = true;
+            Debug.Log(isConnected);
         }
 
     }
@@ -63,6 +64,7 @@ public class EmitterEnergy : MonoBehaviour {
         {
             condName = colInfo.name;
             isConnected = false;
+            Debug.Log(isConnected);
         }
     }
     void FixedUpdate()
