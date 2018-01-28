@@ -18,10 +18,6 @@ public class DebugMove : MonoBehaviour {
         var x = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
         var y = Input.GetAxis("Vertical") * Time.deltaTime * speed;
         transform.Translate(x, y, 0);
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            transform.Rotate(0, 0, 90);
-        }
     }
     void OnMouseDrag()
     {
@@ -30,10 +26,13 @@ public class DebugMove : MonoBehaviour {
         Vector3 pos_move = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance_to_screen));
         //Debug.Log(pos_move);
         transform.position = new Vector3(pos_move.x, pos_move.y, pos_move.z);
-        transform.position = new Vector3(Mathf.Round(transform.position.x),
-                             Mathf.Round(transform.position.y),
-                             Mathf.Round(transform.position.z));
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			transform.Rotate(0, 0, 90);
+		}
+		transform.position = new Vector3 (Mathf.Round (transform.position.x),
+			Mathf.Round (transform.position.y),
+			Mathf.Round (transform.position.z));
+	}
 
-
-    }
 }
