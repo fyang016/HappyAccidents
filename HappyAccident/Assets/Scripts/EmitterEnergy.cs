@@ -10,9 +10,29 @@ public class EmitterEnergy : MonoBehaviour {
 	public float speed = 10.0f;
 	public float distanceSpawn = 2.0f;
 
+	public bool isEmitting = true;
+	public bool isRunning = true;
+
 	void Start() {
 		m_Rigidbody = GetComponent<Rigidbody2D> ();
-		InvokeRepeating("SpawnEnergy", 0.0f,  timeInterval);
+		StartCoroutine ("SpawnCoroutine");
+	}
+
+	void FixedUpdate() {
+		if (Input.GetKeyDown(KeyCode.RightShift))
+		{
+			isEmitting = !isEmitting;
+		}
+	}
+
+	IEnumerator SpawnCoroutine () {
+		while(isRunning) {
+			if (isEmitting) {
+				SpawnEnergy ();
+				yield return new WaitForSeconds(timeInterval/2);
+			}
+			yield return new WaitForSeconds (timeInterval / 2);
+		}
 	}
 
 	void SpawnEnergy() {

@@ -8,5 +8,8 @@ public class EnergyCollide : MonoBehaviour {
 		if (collideInfo.collider.tag == "Obstacle") {
 			Destroy (gameObject);
 		}
+		if (collideInfo.collider.tag == "Wave") {
+			Destroy (gameObject);
+		}
 	}
 }
