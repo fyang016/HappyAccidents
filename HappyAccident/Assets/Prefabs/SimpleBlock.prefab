@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4950424049285980}
   - component: {fileID: 212532231804975752}
   - component: {fileID: 61290633771039718}
+  - component: {fileID: 114271180985700028}
   m_Layer: 0
   m_Name: SimpleBlock
   m_TagString: Obstacle
@@ -66,6 +67,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.99, y: 0.99}
   m_EdgeRadius: 0
+--- !u!114 &114271180985700028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424726680855064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77a1781d344792c4f8eab5e560c52a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!212 &212532231804975752
 SpriteRenderer:
   m_ObjectHideFlags: 1
