@@ -11,6 +11,8 @@ public class Deactivator : MonoBehaviour {
 		if (colInfo.tag == "Energy") {
 			gravityWell.toggleWell ();
 			Debug.Log ("Hitter");
-		}
+            AudioSource deactivatorAudio = GetComponent<AudioSource>();
+            deactivatorAudio.Play();
+        }
 	}
 }
