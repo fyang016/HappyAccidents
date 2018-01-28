@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389418358ce9def47920a2ea3649dee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: menu
+  nextSceneName: Level 1
 --- !u!4 &27115672
 Transform:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DelayTime: 10
-  nextSceneName: menu
+  nextSceneName: Level 1
 --- !u!1 &120869275
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/LevelTrans/TransIntro.unity
+    guid: 93b8c59c405b17f4db0ccbbddb602344
+  - enabled: 1
     path: Assets/Scenes/LevelTrans/Trans(0-1).unity
     guid: ea54eae2557e02543b65c9eefa836560
   - enabled: 1
@@ -38,9 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OfficialScenes/Level 3.unity
     guid: 9e772b5e09b85da4887bda50d78a9bd0
-  - enabled: 1
-    path: Assets/Scenes/LevelTrans/TransIntro.unity
-    guid: 93b8c59c405b17f4db0ccbbddb602344
   - enabled: 1
     path: Assets/Scenes/LevelTrans/Trans(5-Win).unity
     guid: ad9e6a54f640cab45a8068b11dc89a95

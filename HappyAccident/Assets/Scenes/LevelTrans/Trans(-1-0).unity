@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389418358ce9def47920a2ea3649dee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Trans(0-1)
+  nextSceneName: menu
 --- !u!4 &27115672
 Transform:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DelayTime: 10
-  nextSceneName: Trans(0-1)
+  nextSceneName: menu
 --- !u!1 &120869275
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 391d752f2b78f644ebe330955c760388, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da3495e6221751d4e9f3d605f24cf314, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
