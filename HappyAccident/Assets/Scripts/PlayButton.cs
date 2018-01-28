@@ -23,6 +23,10 @@ public class PlayButton : MonoBehaviour {
             e.isEmitting = true;
         }
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 	// Update is called once per frame
 	void Update () {
 		
