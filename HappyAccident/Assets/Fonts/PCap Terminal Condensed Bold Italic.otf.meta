@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 96b51eeee22dd9b4797f50339073e173
+timeCreated: 1517122500
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: PCap Terminal Condensed
+  fontNames:
+  - PCap Terminal Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 76049943e87897a4e8f859c126615ac7, type: 3}
+  - {fileID: 12800000, guid: 24830267533bcd1428e3b21c84e50464, type: 3}
+  - {fileID: 12800000, guid: 38fdd13ecf027724b8b10e7ca6074431, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -89,7 +89,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 999
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -109,7 +109,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleRadius: 4
-  angularVelo: 1
+  angularVelo: 90
   isOn: 1
 --- !u!212 &212034088385565130
 SpriteRenderer:
@@ -271,11 +271,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300014, guid: 76eb6f552e16d9e40a3d0d3062ac92da, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.8068962, a: 1}
+  m_SortingLayerID: -1509716533
+  m_SortingLayer: 1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 3ad65cd3d07b6414f8099aacef181236, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -318,8 +318,8 @@ SpriteRenderer:
   m_SortingLayerID: -1509716533
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300014, guid: 76eb6f552e16d9e40a3d0d3062ac92da, type: 3}
-  m_Color: {r: 0.2205882, g: 0.12651382, b: 0.12651382, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fb5b44758a5f21848afbf8edfcccb5c7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
