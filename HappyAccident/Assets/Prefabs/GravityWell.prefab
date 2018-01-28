@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 58458125738034470}
   - component: {fileID: 50867957638400504}
   - component: {fileID: 82416763657824166}
+  - component: {fileID: 114585552367827648}
   m_Layer: 11
   m_Name: GravityWell
   m_TagString: Obstacle
@@ -58,7 +59,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1545578606645188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.81, y: 3.13, z: 0}
+  m_LocalPosition: {x: -4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4960301391550254}
@@ -302,7 +303,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 1
+      value: 0.28
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -334,6 +335,20 @@ MonoBehaviour:
   scaleRadius: 1
   angularVelo: 90
   isOn: 1
+--- !u!114 &114585552367827648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1545578606645188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e325ba803d7a647a2af53b40f2916b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emitterEffect: {fileID: 1550321444759848, guid: 768cdf550242be94dbc929218752d1ef,
+    type: 2}
+  userTag: Conductor
 --- !u!212 &212034088385565130
 SpriteRenderer:
   m_ObjectHideFlags: 1
