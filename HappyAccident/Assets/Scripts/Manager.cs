@@ -5,6 +5,7 @@ using UnityEngine;
 public class Manager : MonoBehaviour {
 
     // Use this for initialization
+<<<<<<< HEAD
     public List<GameObject> components;
     private void Awake()
     {
@@ -27,4 +28,8 @@ public class Manager : MonoBehaviour {
     void Update () {
 		
 	}
+=======
+    GameObject[] components;
+   
+>>>>>>> 2be8bccccfba7231472cc862696657b81fd7f699
 }
