@@ -8,8 +8,8 @@ using UnityEngine.UI;
 public class GoalPoint : MonoBehaviour {
 	public string nextSceneName;
 	[SerializeField] bool isFinished = false;
-	//public Text newText;
-	//public string winString;
+	public Canvas newText;
+	public string winString;
 	void Start() {
 		
 	}
@@ -18,17 +18,18 @@ public class GoalPoint : MonoBehaviour {
 		if (colInfo.tag == "Energy") {
 			AudioSource winSong = GetComponent<AudioSource> ();
 			winSong.Play ();
-			//Text item = Instantiate(newText, new Vector3 (0,0,0), transform.rotation) as Text;
-			//item.text = winString;
+			Debug.Log ("Energy");
 			isFinished = true;
+			Canvas item = Instantiate(newText, new Vector3 (0,0,0), transform.rotation) as Canvas;
+
 		}
 	}
 
 	void FixedUpdate() {
 		if (isFinished) {
-			//if(Input.GetKeyDown(KeyCode.Space)) {
+			if(Input.GetKeyDown(KeyCode.Space)) {
 			    SceneManager.LoadScene(nextSceneName);
-			//}
+			}
 		}
 	}
 }
