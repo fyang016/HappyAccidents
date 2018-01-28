@@ -15,7 +15,7 @@ public class teleportFunction : MonoBehaviour
     {
         //distance for the child (P.S I do not know what these code are doing)
         float dst = Vector3.Distance(child.transform.position, transform.position);
-        if (dst > maxDistance)
+        if (dst < maxDistance)
         {
             Vector3 vect = transform.position - child.transform.position;
             vect = vect.normalized;
