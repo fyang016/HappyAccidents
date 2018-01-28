@@ -15,7 +15,7 @@ public class GoalPoint : MonoBehaviour {
 			AudioSource winSong = GetComponent<AudioSource> ();
 			winSong.Play ();
 
-			Debug.Log ("Help");;
+			Debug.Log ("Help");
 			SceneManager.LoadScene(nextSceneName);
 		}
 	}
