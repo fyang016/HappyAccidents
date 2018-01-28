@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:HappyAccident/Assets/Cinemachine.meta
 guid: 082010be1709f0f4581e8cc0078943ff
 folderAsset: yes
 timeCreated: 1517173686
+=======
+guid: 37ef7325f62daab42ad2a55074ada24e
+folderAsset: yes
+timeCreated: 1517118525
+>>>>>>> master:HappyAccident/Assets/Cinemachine.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
