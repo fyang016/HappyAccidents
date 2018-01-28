@@ -163,6 +163,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1838520a9f578a6459f68fdbf91e670d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &735226569
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4567506955957180, guid: c619b1073c51cce4a96cec743d27624d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567506955957180, guid: c619b1073c51cce4a96cec743d27624d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567506955957180, guid: c619b1073c51cce4a96cec743d27624d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567506955957180, guid: c619b1073c51cce4a96cec743d27624d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567506955957180, guid: c619b1073c51cce4a96cec743d27624d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567506955957180, guid: c619b1073c51cce4a96cec743d27624d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567506955957180, guid: c619b1073c51cce4a96cec743d27624d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567506955957180, guid: c619b1073c51cce4a96cec743d27624d, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c619b1073c51cce4a96cec743d27624d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &761333245
 Prefab:
   m_ObjectHideFlags: 0
@@ -377,6 +419,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
