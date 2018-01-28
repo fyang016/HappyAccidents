@@ -75,11 +75,8 @@ public class EmitterEnergy : MonoBehaviour {
                 SpawnEnergy();
                 timer = 0f;
             }
-        }
-        
-    }
-
-    
+        }        
+    }   
 
 	void SpawnEnergy() {
 		Rigidbody2D energyClone;
