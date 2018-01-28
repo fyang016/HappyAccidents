@@ -14,6 +14,7 @@ public class ConductorCreator : MonoBehaviour {
 	public int upperCondLimit = 6;
 
 	public float numberToIncre = 1.0f;
+    public AudioSource resizerAudio;
 
     public int rotation = 0;
 
@@ -54,13 +55,16 @@ public class ConductorCreator : MonoBehaviour {
 					numberOfConductor++;
 					createCond (numberOfConductor, CondContainer);
 				}
-			}
+                //KingdomCross was here
+                resizerAudio.Play();
+            }
 			else if (Input.GetKeyDown(KeyCode.X)) {
 				if(numberOfConductor > lowerCondLimit) {
 					numberOfConductor--;
 				    createCond (numberOfConductor, CondContainer);
 				}
-			}
+                resizerAudio.Play();
+            }
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
                 rotation = rotation + 90;
