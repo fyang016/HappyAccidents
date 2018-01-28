@@ -6,7 +6,7 @@ public class DebugMove : MonoBehaviour {
 
     [SerializeField]
     float speed = 10;
-    
+	int degree = 90;
 
 	// Use this for initialization
 	void Start () {
@@ -28,7 +28,7 @@ public class DebugMove : MonoBehaviour {
         transform.position = new Vector3(pos_move.x, pos_move.y, pos_move.z);
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			transform.Rotate(0, 0, 90);
+			transform.Rotate(0, 0, degree);
 		}
 		transform.position = new Vector3 (Mathf.Round (transform.position.x),
 			Mathf.Round (transform.position.y),

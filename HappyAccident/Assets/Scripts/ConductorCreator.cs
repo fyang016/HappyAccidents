@@ -19,6 +19,7 @@ public class ConductorCreator : MonoBehaviour {
 	SpriteRenderer rend;
 
 	[SerializeField] bool isSelected = false;
+	bool createFirst = true;
 
 	void start() {
 		
@@ -36,6 +37,10 @@ public class ConductorCreator : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
+		if (createFirst) {
+			createCond (numberOfConductor, CondContainer);
+			createFirst = false;
+		}
 		if (isSelected) {
 			if (Input.GetKeyDown ("g")) {
 				createCond (numberOfConductor, CondContainer);
