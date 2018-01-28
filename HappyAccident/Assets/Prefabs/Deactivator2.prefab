@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61649285387765210}
   - component: {fileID: 114436975524467526}
   m_Layer: 10
-  m_Name: Deactivator
+  m_Name: Deactivator2
   m_TagString: Energy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityWell: {fileID: 0}
+  deactivatorAudio: {fileID: 0}
+  grabAudio: {fileID: 0}
+  dropAudio: {fileID: 0}
 --- !u!114 &114436975524467526
 MonoBehaviour:
   m_ObjectHideFlags: 1

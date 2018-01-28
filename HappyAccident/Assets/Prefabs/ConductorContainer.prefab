@@ -43,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1343990092568168}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.98, y: 0.62, z: 0}
+  m_LocalPosition: {x: 4.42, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -104,7 +104,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 0363e0f280d0b934a86534beca7f751e,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 86c2fb65a91c79449b7eadd906a72202, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 957196a752dd58041a7f2071a0f51381, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba8c15abde8a26545bd1dc61be19270d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CondStart: {fileID: 1079681211935254, guid: f75c3fb57c4f84d4a949ec8a7a11d12e, type: 2}
+  CondStart: {fileID: 1218977126543976, guid: f75c3fb57c4f84d4a949ec8a7a11d12e, type: 2}
   CondMid: {fileID: 1291280692339440, guid: 152965bc2f8a8ee46ade580b2fe6c564, type: 2}
   CondEnd: {fileID: 1326589930267532, guid: 1f11329586ba3d640a4eb0b5688aef0c, type: 2}
   CondContainer: {fileID: 1343990092568168}
@@ -396,6 +396,8 @@ MonoBehaviour:
   lowerCondLimit: 2
   upperCondLimit: 6
   numberToIncre: 1
+  resizerAudio: {fileID: 82355621234229398}
+  rotation: 0
   isSelected: 0
 --- !u!212 &212846383192540434
 SpriteRenderer:
