@@ -121,7 +121,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 27115672}
-  - component: {fileID: 27115671}
   - component: {fileID: 27115673}
   m_Layer: 0
   m_Name: LevelTrans
@@ -130,19 +129,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &27115671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 27115670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d963525750948a948afe4ad7ba14ffdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DelayTime: 20
-  nextSceneName: Level1
 --- !u!4 &27115672
 Transform:
   m_ObjectHideFlags: 0
