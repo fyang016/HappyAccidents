@@ -5,7 +5,6 @@ using UnityEngine;
 public class Manager : MonoBehaviour {
 
     // Use this for initialization
-
     public List<GameObject> components;
     public bool canMove = true;
     private void Awake()
