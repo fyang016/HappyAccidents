@@ -10,28 +10,36 @@ public class conductorAudio : MonoBehaviour
     public AudioSource grabAudio;
     public AudioSource dropAudio;
 
+    void Start()
+    {
+
+    }
+
     void OnTriggerEnter2D(Collider2D colInfo)
     {
         if (colInfo.tag == "Energy")
         {
-            colliderFloat += 1;
-            //Debug.Log(colliderFloat);
-            conductAudio.Play();
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D colliderExit)
-    {
-        if (colliderExit.tag == "Energy")
-        {
-            colliderFloat -= 1;
-            //Debug.Log(colliderFloat);
-            if (colliderFloat == 0)
+            //colliderFloat += 1;
+            Debug.Log("colliderFloat");
+            if(!conductAudio.isPlaying)
             {
-                conductAudio.Stop();
+                conductAudio.Play();
             }
         }
     }
+
+    //void OnTriggerExit2D(Collider2D colliderExit)
+    //{
+    //    if (colliderExit.tag == "Energy")
+    //    {
+    //        colliderFloat -= 1;
+    //        Debug.Log(colliderFloat);
+    //        if (colliderFloat == 0)
+    //        {
+    //            conductAudio.Stop();
+    //        }
+    //    }
+    //}
 
     void OnMouseDown()
     {
