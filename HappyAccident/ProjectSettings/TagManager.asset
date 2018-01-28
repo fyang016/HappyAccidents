@@ -8,6 +8,7 @@ TagManager:
   - Energy
   - Special
   - Conductor
+  - Credits
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Conductor
   - ConductorTrigger
   - IgnoreEnergy
-  - 
+  - Credit
   - 
   - 
   - 
