@@ -118,8 +118,8 @@ MonoBehaviour:
   CondEnd: {fileID: 1326589930267532, guid: 1f11329586ba3d640a4eb0b5688aef0c, type: 2}
   CondContainer: {fileID: 1627476613981782}
   CondRender: {fileID: 212179832297853618}
-  numberOfConductor: 5
-  lowerCondLimit: 3
+  numberOfConductor: 3
+  lowerCondLimit: 2
   upperCondLimit: 6
   numberToIncre: 1
   isSelected: 0
